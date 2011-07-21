@@ -1,0 +1,151 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input:focus {
+  outline: 0;
+}
+
+#presentation {
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+div.slide {
+  -webkit-box-shadow: 0 0 50px #555;
+  -moz-box-shadow: 0 0 50px #555;
+  box-shadow: 0 0 50px #555;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: inline-block;
+  height: 650px;
+  padding: 30px;
+  position: relative;
+  vertical-align: top;
+  width: 900px;
+}
+
+div.inactiveslide {
+  opacity: 0.4;
+}
+
+div.activeslide {
+  opacity: 1;
+}
+
+h1{
+  font-family: 'Trebuchet MS';
+  font-size: 36px;
+  font-weight: bold;
+  color: darkred;
+  text-shadow: 2px 2px 2px #aaa;
+  margin-bottom: .5em;
+  background: #ccc;
+  margin-bottom: .2em;
+  padding: 20px;
+  margin: -30px -30px .5em -30px;
+  border-radius: 20px;
+
+}
+
+ul,ol{
+  margin-left: 1em;
+  list-style-position: inside;
+}
+
+li,p,td,th{
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+
+
+ul,p{
+  margin-bottom: .75em;
+}
+
+code{
+  font-size: 20px;
+  font-family: courier;
+  font-weight: bold;
+}
+
+.code{
+  background: #ccc;
+  padding: 1em;
+  border-left: 15px solid darkred;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+th,td{
+  font-size: 24px;
+  padding: 5px;
+}
+
+th,td{
+  background: #ccc;
+  border: 1px black;
+  border-style: none none solid solid;
+}
+td{
+  font-size: 18px;
+  background: inherit;
+  font-weight: normal;
+}
+
+th:first-child, td:first-child{
+  border-style: none none solid none;
+}
+
