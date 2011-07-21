@@ -1,8 +1,12 @@
 <?php
 class Fathom{
-  var $wpdb = '';
-  var $editable_options = array(
+	var $wpdb = '';
+	var $height = 650;
+	var $width = 900;
 
+  var $editable_options = array(
+		'width',
+		'height'
   );
 
   public function __construct(&$wpdb){
@@ -11,7 +15,11 @@ class Fathom{
 		wp_register_style('fathom_wp.css',plugins_url('/stylesheets/fathom_wp.css',dirname(__FILE__)));
 		wp_register_script('fathom.min.js',plugins_url('/javascripts/fathom.min.js',dirname(__FILE__)));
 		wp_register_script('fathom_wp.js',plugins_url('/javascripts/fathom_wp.js',dirname(__FILE__)));
-
+		foreach($this->editable_options as $opt){
+			if(get_option('fathom_' . $opt)){
+				$this->{$opt} = get_option('fathom_' . $opt);
+			}
+		}
   }
 
   public function fathom_install(){
@@ -113,7 +121,7 @@ class Fathom{
 
 			$updated = true;
 			foreach($this->editable_options as $opt){
-				$this->{$opt} = stripslashes($_POST['cat_sub_' . $opt]);
+				$this->{$opt} = stripslashes($_POST['fathom_' . $opt]);
 				update_option('fathom_'. $opt, $this->{$opt});
 			}
 		}
@@ -128,16 +136,22 @@ class Fathom{
   <h2><?php _e('Configure Fathom'); ?></h2>
   <table class="form-table">
     <tr>
-    <th><label for="cat_sub_max_batch"><?php _e('Maximum outgoing email batch size');  ?></label></th>
+    <th><label for="fathom_height"><?php _e('Slideshow Height');  ?></label></th>
       <td>
-      <input type="text" name="cat_sub_max_batch" value="<?php echo esc_attr($this->max_batch); ?>" size="10" /><br />
-        <span class="description"><?php _e('How many emails should we send per cron run?') ?></span>
+      <input type="text" name="fathom_height" value="<?php echo esc_attr($this->height); ?>" size="10" />px<br />
+        <span class="description"><?php _e('Height of a Fathom slideshow, in pixels. Defaults to 650px.') ?></span>
+      </td>
+    </tr>
+    <tr>
+    <th><label for="fathom_width"><?php _e('Slideshow Width');  ?></label></th>
+      <td>
+      <input type="text" name="fathom_width" value="<?php echo esc_attr($this->width); ?>" size="10" />px<br />
+        <span class="description"><?php _e('Width of a Fathom slideshow, in pixels. Defaults to 900px.') ?></span>
       </td>
     </tr>
   </table>
   <p class="submit"><input type="submit" name="submit" id="submit" class="button-primary" value="<?php _e('Update Options'); ?>"  /></p> 
   </form>
-
 </div>
 
 <?php 
