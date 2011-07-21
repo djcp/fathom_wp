@@ -26,6 +26,5 @@ register_deactivation_hook(__FILE__,array( $cat_sub,'fathom_deactivate' ));
 add_action('init', array( $fathom, 'register_slide_custom_type'));
 
 add_action( 'admin_menu', array( $fathom, 'admin_menu' ) );
+add_action( 'template_redirect', array($fathom, 'custom_slide_page_template'));
 
-
-?>
