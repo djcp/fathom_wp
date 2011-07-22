@@ -1,15 +1,18 @@
 * Intro
-** Me - Run blogs.law, 925 blogs
+** Me - Run blogs.law, 954 blogs and a bunch more in a few different places.
 ** How I came to BDD
 
 * Intro to BDD
-** History
-** Philosophy
-** Advocacy
+** Logical successor to test driven development, focusing on higher level application behavior.
+** Outside in - meaning you focus on the parts users interact with first - and the implementation flows from that.
+** Theoretically delivers more value to the client quicker because you focus on fulfilling the stuff that matters to the client - the external interface - first. Too simplistic, but makes some sense.
+** Uses "stories" to describe what a user does with an application. These stories are (mostly) human readable and - in the case of Gherkin - an interpreted DSL.
+** Show sample story
+** PHP alternatives to ruby's cucumber / capybara: behat, cuke4php
 
 * Intro to cucumber, capybara, and selenium
-** flexible DSL for web testing
-** sample feature
+** Gherkin is the DSL for web testing
+** sample feature - Scenario, givens, whens, thens. 
 ** install guide slide
 ** run a feature
 

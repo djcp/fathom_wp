@@ -117,7 +117,7 @@ code{
   font-weight: bold;
 }
 
-.code{
+pre{
   background: #ccc;
   padding: 1em;
   border-left: 15px solid darkred;
