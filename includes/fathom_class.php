@@ -63,6 +63,10 @@ class Fathom{
 
 	private function init_slide_resources(){
 			wp_enqueue_style('fathom_wp.css');
+			if (file_exists(TEMPLATEPATH . '/fathom_custom.css')) {
+        wp_register_style('fathom_custom.css',get_template_directory_uri() . '/fathom_custom.css');
+        wp_enqueue_style('fathom_custom.css');
+      }
 			wp_enqueue_script('jquery');
 			wp_enqueue_script('fathom.min.js');
 			wp_enqueue_script('fathom_wp.js');

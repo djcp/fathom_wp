@@ -1,0 +1,24 @@
+* Intro
+** Me - Run blogs.law, 925 blogs
+** How I came to BDD
+
+* Intro to BDD
+** History
+** Philosophy
+** Advocacy
+
+* Intro to cucumber, capybara, and selenium
+** flexible DSL for web testing
+** sample feature
+** install guide slide
+** run a feature
+
+* BDD workflow
+** Add a new feature - slideshow taxonomy name
+** Add a new feature - logo
+
+* Misc
+** cucumber allows for very flexible and expressive browser automation.
+** can be pointed at *any* domain, so can be used to test live or staging sites.
+** the future - turn this into a generic testing framework.
+** challenges - HTML in wordpress is sub-optimal.
