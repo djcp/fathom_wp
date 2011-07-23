@@ -17,8 +17,7 @@
 ** run a feature
 
 * BDD workflow
-** Add a new feature - slideshow taxonomy name
-** Add a new feature - logo
+** Add a new feature - default font size.
 
 * Misc
 ** cucumber allows for very flexible and expressive browser automation.

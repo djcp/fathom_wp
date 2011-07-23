@@ -8,20 +8,20 @@
 <?php wp_head(); ?>
 <style type="text/css">
   #presentation div.slide{
-    width: <?php echo get_option('fathom_width'); ?>px;
-    height: <?php echo get_option('fathom_height'); ?>px;
+    width: <?php echo htmlspecialchars(get_option('fathom_width')); ?>px;
+    height: <?php echo htmlspecialchars(get_option('fathom_height')); ?>px;
   }
 </style>
 </head>
 <body <?php body_class() ?>>
-<div id="presentation" class="<?php echo ((get_option('fathom_vertical_center') == 1) ? 'vertical_center' : ''); ?>">
+<div id="presentation" class="<?php echo htmlspecialchars(((get_option('fathom_vertical_center') == 1) ? 'vertical_center' : '')); ?>">
 <?php global $wp; ?>
 	<?php $args = array( 'post_type' => 'slide', 'orderby' => 'menu_order', 'order' => 'ASC', 'posts_per_page' => 0, 'slideshows' => $wp->query_vars['slideshows']); ?>
 	<?php query_posts($args); ?>
 
   <?php while ( have_posts() ) : the_post(); ?>
 	  <div class="slide">
-  		<h1><?php the_title() ?></h1>
+  		<h1><?php echo htmlspecialchars(get_the_title()); ?></h1>
       <div class="slidecontent">
     		<?php the_content(); ?>
       </div>

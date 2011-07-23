@@ -3,6 +3,7 @@ v2.0 | 20110126
 License: none (public domain)
  */
 
+/*
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,6 +24,8 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+*/
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -90,7 +93,7 @@ h1,h2,h3{
 }
 
 h1{
-  font-size: 36px;
+  font-size: 48px;
   background: #ccc;
   margin-bottom: .2em;
   padding: 20px;
@@ -99,11 +102,11 @@ h1{
 }
 
 h2{
-  font-size: 32px;
+  font-size: 40px;
 }
 
 h3{
-  font-size: 28px;
+  font-size: 36px;
 }
 
 ul,ol{
@@ -113,8 +116,17 @@ ul,ol{
 
 li,p,td,th,div{
   font-family: Arial;
-  font-size: 24px;
+  font-size: 32px;
   line-height: 1.6em;
+}
+
+li{
+  margin-bottom: 1em;
+  line-height: 1.2em;
+}
+
+code{
+  font-size: 32px;
 }
 
 b{
@@ -127,7 +139,7 @@ ul,p{
 }
 
 pre{
-  font-size: 18px;
+  font-size:18px;
   background: #ccc;
   line-height: 1em;
   padding: 1em;
@@ -152,7 +164,7 @@ th,td{
   border-style: none none solid solid;
 }
 td{
-  font-size: 18px;
+  font-size: 24px;
   background: inherit;
   font-weight: normal;
 }

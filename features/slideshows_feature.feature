@@ -18,9 +18,10 @@ Scenario: When an editor adds a slide it should appear in the slide.
     When I visit "/wp-admin/post-new.php?post_type=slide"
     And I fill in "post_title" with "A new test slide"
     And I click "#edButtonHTML"
-    And I fill in "content" with "<ul><li>Test button</li></ul>"
+    And I fill in "content" with "<ul><li>Test slide content is so cool</li></ul>"
     And I fill in the slideshow taxonomy field with the random value I just used
     And I press "publish"
     And I click "#message a"
     Then I should see "A new test slide"
+    And I should see "Test slide content is so cool"
 

@@ -4,11 +4,13 @@ class Fathom{
   var $height = 650;
   var $width = 900;
   var $vertical_center = '';
+  var $body_font_size = 32; 
 
   var $editable_options = array(
     'width',
     'height',
-    'vertical_center'
+    'vertical_center',
+    'body_font_size'
   );
 
   public function __construct(&$wpdb){
@@ -159,6 +161,13 @@ class Fathom{
       <td>
       <input type="checkbox" name="fathom_vertical_center" value="1" <?php echo (($this->vertical_center == 1) ? 'checked="checked"' : ''); ?> /><br />
         <span class="description"><?php _e('If checked, we\'ll center the slide content as best we can vertically in the center of the slide body.') ?></span>
+      </td>
+    </tr>
+    <tr>
+    <th><label for="fathom_body_font_size"><?php _e('Slide content font size');  ?></label></th>
+      <td>
+      <input type="text" name="fathom_body_font_size" value="<?php echo esc_attr($this->width); ?>" size="10" />px<br />
+        <span class="description"><?php _e('The slide content font size, in pixels. 32px by default.') ?></span>
       </td>
     </tr>
   </table>
