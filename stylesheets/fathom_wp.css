@@ -114,9 +114,13 @@ ul,ol{
 li,p,td,th,div{
   font-family: Arial;
   font-size: 24px;
-  font-weight: bold;
   line-height: 1.6em;
 }
+
+b{
+  font-weight: bold;
+}
+
 
 ul,p{
   margin-bottom: .75em;

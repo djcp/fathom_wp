@@ -7,7 +7,13 @@ Given 'a logged in user of type "$user_type"' do |user_type|
     fill_in('Username', :with => "testsubscriber")
     fill_in('Password', :with => "testsubscriber")
     click_button('Log In')
-    raise Wordpress::LogInError unless page.has_content?('Personal Options')
+    raise Wordpress::LogInError unless page.has_content?('Howdy, testsubscriber')
+  when 'editor'
+    visit('/wp-login.php')
+    fill_in('Username', :with => "editor")
+    fill_in('Password', :with => "editor")
+    click_button('Log In')
+    raise Wordpress::LogInError unless page.has_content?('Howdy, editor')
   when 'administrator'
     visit('/wp-login.php')
     fill_in('Username', :with => "admin")
