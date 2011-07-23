@@ -14,11 +14,13 @@
 </style>
 </head>
 <body <?php body_class() ?>>
-<div id="presentation">
+<div id="presentation" class="<?php echo ((get_option('fathom_vertical_center') == 1) ? 'vertical_center' : ''); ?>">
   <?php while ( have_posts() ) : the_post(); ?>
 	  <div class="slide">
   		<h1><?php the_title() ?></h1>
-  		<?php the_content(); ?>
+      <div class="slidecontent">
+        <?php the_content(); ?>
+      </div>
   	</div>
 	<?php endwhile; // end of the loop. ?>
 </div>

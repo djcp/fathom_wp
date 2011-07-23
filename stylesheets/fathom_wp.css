@@ -70,6 +70,7 @@ div.slide {
   position: relative;
   vertical-align: top;
   width: 900px;
+  border: 1px solid #444;
 }
 
 div.inactiveslide {
@@ -80,19 +81,29 @@ div.activeslide {
   opacity: 1;
 }
 
-h1{
+h1,h2,h3{
   font-family: 'Trebuchet MS';
-  font-size: 36px;
   font-weight: bold;
   color: darkred;
   text-shadow: 2px 2px 2px #aaa;
   margin-bottom: .5em;
+}
+
+h1{
+  font-size: 36px;
   background: #ccc;
   margin-bottom: .2em;
   padding: 20px;
   margin: -30px -30px .5em -30px;
   border-radius: 20px;
+}
 
+h2{
+  font-size: 32px;
+}
+
+h3{
+  font-size: 28px;
 }
 
 ul,ol{
@@ -100,7 +111,7 @@ ul,ol{
   list-style-position: inside;
 }
 
-li,p,td,th{
+li,p,td,th,div{
   font-family: Arial;
   font-size: 24px;
   font-weight: bold;
@@ -111,16 +122,13 @@ ul,p{
   margin-bottom: .75em;
 }
 
-code{
-  font-size: 20px;
-  font-family: courier;
-  font-weight: bold;
-}
-
 pre{
+  font-size: 18px;
   background: #ccc;
+  line-height: 1em;
   padding: 1em;
   border-left: 15px solid darkred;
+  font-family: courier;
 }
 
 table {
