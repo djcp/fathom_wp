@@ -166,7 +166,7 @@ class Fathom{
     <tr>
     <th><label for="fathom_body_font_size"><?php _e('Slide content font size');  ?></label></th>
       <td>
-      <input type="text" name="fathom_body_font_size" value="<?php echo esc_attr($this->width); ?>" size="10" />px<br />
+      <input type="text" name="fathom_body_font_size" value="<?php echo esc_attr($this->body_font_size); ?>" size="10" />px<br />
         <span class="description"><?php _e('The slide content font size, in pixels. 32px by default.') ?></span>
       </td>
     </tr>
