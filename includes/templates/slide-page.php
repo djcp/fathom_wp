@@ -11,6 +11,13 @@
     width: <?php echo htmlspecialchars(get_option('fathom_width')); ?>px;
     height: <?php echo htmlspecialchars(get_option('fathom_height')); ?>px;
   }
+
+<?php if(false){ ?>  
+  #presentation div.slide,li,p,td,th,div{
+    font-size: <?php echo htmlspecialchars(get_option('fathom_body_font_size')); ?>px;
+  }
+<?php } ?>
+
 </style>
 </head>
 <body <?php body_class() ?>>
