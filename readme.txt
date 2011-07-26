@@ -11,7 +11,9 @@ This plugin was used to create the Behavior Driven Development for Wordpress plu
 
 === Installation ===
 
-Nothing too exciting if you just want to use it as a plugin. To use the BDD tests under features/ , you'll need to install cucumber, capybara and the selenium webdrivers. To do that (for linux):
+Nothing too exciting if you just want to use it as a plugin. You know the deal.
+
+To use the BDD tests under features/, you'll need to install cucumber, capybara and the selenium webdrivers. To do that (for linux):
 
 First, install rvm - most likely as the user you'll be running your tests as. See: http://rvm.beginrescueend.com/
 
