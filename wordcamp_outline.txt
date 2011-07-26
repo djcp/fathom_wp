@@ -8,7 +8,7 @@
 ** Theoretically delivers more value to the client quicker because you focus on fulfilling the stuff that matters to the client - the external interface - first. Too simplistic, but makes some sense.
 ** Uses "stories" to describe what a user does with an application. These stories are (mostly) human readable and - in the case of Gherkin - an interpreted DSL.
 ** Show sample story
-** PHP alternatives to ruby's cucumber / capybara: behat, cuke4php
+** PHP alternatives to ruby's cucumber / capybara: behat
 
 * Intro to cucumber, capybara, and selenium
 ** Gherkin is the DSL for web testing

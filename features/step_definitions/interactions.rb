@@ -1,8 +1,8 @@
 include Capybara::DSL
 
-#Then /^the default slide body font size should be "([^"]*)"$/ do |font_size|
-#  raise Wordpress::ContentError unless page.html.match(/font\-size\: #{font_size}/)
-#end
+Then /^the default slide body font size should be "([^"]*)"$/ do |font_size|
+  raise Wordpress::ContentError unless page.html.match(/font\-size\: #{font_size}/)
+end
 
 When 'I visit "$a_page"' do |a_page|
   visit a_page

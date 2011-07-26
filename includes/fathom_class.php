@@ -4,12 +4,12 @@ class Fathom{
   var $height = 650;
   var $width = 900;
   var $vertical_center = '';
-#  var $body_font_size = 32; 
+  var $body_font_size = 32; 
 
   var $editable_options = array(
     'width',
     'height',
-#    'body_font_size',
+    'body_font_size',
     'vertical_center'
   );
 
@@ -164,7 +164,7 @@ class Fathom{
       </td>
     </tr>
 
-<?php if(false){ ?>
+
     <tr>
     <th><label for="fathom_body_font_size"><?php _e('Slide content font size');  ?></label></th>
       <td>
@@ -172,7 +172,7 @@ class Fathom{
         <span class="description"><?php _e('The slide content font size, in pixels. 32px by default.') ?></span>
       </td>
     </tr>
-<?php } ?>
+
 
   </table>
   <p class="submit"><input type="submit" name="submit" id="submit" class="button-primary" value="<?php _e('Update Options'); ?>"  /></p> 
